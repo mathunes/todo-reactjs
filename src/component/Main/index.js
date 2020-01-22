@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Todo from '../Todo';
 
 export default class Main extends Component {
     constructor() {
@@ -30,7 +31,11 @@ export default class Main extends Component {
     render() {
         return (
             <main>
-
+                {this.state.todo.map((item) => {
+                    return (
+                        <Todo todoData={item}/>
+                    )
+                })}
             </main>
         )
     }

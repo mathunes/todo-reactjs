@@ -3,8 +3,8 @@ import './style.css';
 
 export default class Todo extends Component {
     render() {
-        render (
-            <div class="todo">
+        return (
+            <div className="todo">
                 <div className="todo-title">
                     <h3>{this.props.todoData.title}</h3>
                 </div>
