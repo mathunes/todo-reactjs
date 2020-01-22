@@ -19,5 +19,32 @@ header.header-main h1 {
 header.header-main .add-todo {
     position: absolute;
     left: 0;
-    margin-left: 20px
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #735646;
+}
+
+header.header-main .add-todo:hover {
+    cursor: pointer;
+    background-color: #644c3f;
+}
+
+header.header-main .add-todo * {
+    margin: 5px
+}
+
+header.header-main .add-todo p {
+    color: #F2C8C4;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header.header-main .add-todo img {
+    width: 20px;
 }
