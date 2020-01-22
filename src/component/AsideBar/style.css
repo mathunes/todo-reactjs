@@ -1,0 +1,105 @@
+nav.aside-bar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #28344C;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    transition: all .5s;
+    box-shadow: 5px 0px 10px 0px rgba(13,13,13,.5);
+    z-index: 3;
+}
+
+@media (max-width: 1000px) {
+    nav.aside-bar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    nav.aside-bar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav.aside-bar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    nav.aside-bar header h2 {
+        font-size: 20px;
+    }
+}
+
+.hide-aside-bar {
+    left: calc(-100vw) !important;
+}
+
+nav.aside-bar * {
+    margin: 10px 0;
+}
+
+nav.aside-bar header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+nav.aside-bar header img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin: 0;
+    right: 0;
+}
+
+nav.aside-bar header img:hover {
+    cursor: pointer;
+}
+
+nav.aside-bar header h2 {
+    margin: auto;
+    color: #F2C8C4;
+}
+
+nav.aside-bar form {
+    display: flex;
+    flex-direction: column;
+}
+
+nav.aside-bar form input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #F2C8C4;
+    color: #0D0D0D;
+    border: 1px solid #412f26;
+}
+
+nav.aside-bar form textarea.description-todo {
+    text-align: start;
+    height: 100px;
+    resize: none;
+}
+
+nav.aside-bar form input.save-todo {
+    background-color: #735646;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F2C8C4;
+    transition: all .2s;
+    border: 1px solid #412f26;
+}
+
+nav.aside-bar form input.save-todo:hover {
+    background-color: #644c3f;
+    cursor: pointer;
+}

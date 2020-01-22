@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
+header.header-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+header.header-main h1 {
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Alata', sans-serif;
+}
+
+header.header-main .add-todo {
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #735646;
+    transition: all .2s;
+}
+
+header.header-main .add-todo:hover {
+    cursor: pointer;
+    background-color: #644c3f;
+}
+
+header.header-main .add-todo * {
+    margin: 5px
+}
+
+header.header-main .add-todo p {
+    color: #F2C8C4;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header.header-main .add-todo img {
+    width: 20px;
+}
+
+@media (max-width: 900px) {
+    header.header-main .add-todo p {
+        display: none;
+    }
+
+    header.header-main .add-todo {
+        margin: 0 10px;
+        position: relative;
+        padding: 0;
+    }
+
+    header.header-main .add-todo img {
+        width: 18px
+    }
+
+    header.header-main h1 { 
+        margin: 0 10px;
+        font-size: 28px;
+    }
+}
