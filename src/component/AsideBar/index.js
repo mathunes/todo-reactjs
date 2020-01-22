@@ -33,7 +33,10 @@ export default class AsideBar extends Component {
 
     saveTodo(event) {
         event.preventDefault();
-        this.props.onSubmit(this.state);
+        if (this.state.titleTodo !== "") {
+            this.props.onSubmit(this.state);
+        }
+        
     }
 
     render() {
