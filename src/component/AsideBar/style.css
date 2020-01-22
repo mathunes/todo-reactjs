@@ -13,9 +13,26 @@ nav.aside-bar {
     z-index: 3;
 }
 
+@media (max-width: 1000px) {
+    nav.aside-bar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    nav.aside-bar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav.aside-bar {
+        width: 80%;
+    }
+}
+
 .hide-aside-bar {
-    /* left: -1000px !important; */
-    left: calc(-40vw) !important;
+    left: calc(-100vw) !important;
 }
 
 nav.aside-bar * {
