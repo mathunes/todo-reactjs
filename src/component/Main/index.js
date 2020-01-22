@@ -12,12 +12,15 @@ export default class Main extends Component {
     }
 
     showTodo() {
-        // this.setState({
-        //     todo: [...this.state.todo, this.props.todoData]
-        // })
+        
+        if ((this.state.todo.indexOf(this.props.todoData)) === -1) { //Verificando se esse objeto ja esta no array
 
-        // console.log(this.state);
-        console.log(this.props.todoData);
+            this.setState({
+                todo: [...this.state.todo, this.props.todoData]
+            });
+            
+        }    
+        
     }
 
     componentDidUpdate() {
@@ -27,7 +30,7 @@ export default class Main extends Component {
     render() {
         return (
             <main>
-                <button onClick={this.showTodo}>Click</button>           
+
             </main>
         )
     }
