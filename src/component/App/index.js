@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AsideBar from '../AsideBar';
+import Header from '../Header';
 
 export default class App extends Component {
 
@@ -24,6 +25,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <AsideBar onSubmit={this.saveTodo}/>
+        <Header />
       </div>
     );
   }
