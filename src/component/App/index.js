@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AsideBar from '../AsideBar';
 import Header from '../Header';
+import Main from '../Main';
 
 export default class App extends Component {
 
@@ -26,6 +27,7 @@ export default class App extends Component {
       <div className="App">
         <AsideBar onSubmit={this.saveTodo}/>
         <Header />
+        <Main todoData={this.state}/>
       </div>
     );
   }
