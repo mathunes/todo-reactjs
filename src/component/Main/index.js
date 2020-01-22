@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Todo from '../Todo';
+import './style.css';
 
 export default class Main extends Component {
     constructor() {
@@ -30,7 +31,7 @@ export default class Main extends Component {
 
     render() {
         return (
-            <main>
+            <main className="todo-container">
                 {this.state.todo.map((item, id) => {
                     
                     return (
