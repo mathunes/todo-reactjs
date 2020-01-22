@@ -35,26 +35,28 @@ export default class AsideBar extends Component {
         event.preventDefault();
         if (this.state.titleTodo !== "") {
             this.props.onSubmit(this.state);
-        } else {
-            //Exibir 'digite titulo'
+            document.querySelector('.container .aside-bar form input').value = "";
+            document.querySelector('.container .aside-bar form textarea').value = "";
         }
         
     }
 
     render() {
         return (
-            <nav className="aside-bar">
-                <header>
-                    <h2>Adicionar tarefa</h2>
-                    <img src={IconClose} alt="Botão para fechar asidebar" onClick={this.hideAsideBar} />
-                </header>
+            <div className="container">
+                <nav className="aside-bar">
+                    <header>
+                        <h2>Adicionar tarefa</h2>
+                        <img src={IconClose} alt="Botão para fechar asidebar" onClick={this.hideAsideBar} />
+                    </header>
 
-                <form onSubmit={this.saveTodo}>
-                    <input type="text" className="title-todo" placeholder="Título" onChange={this.setTitle} maxLength="25"/>
-                    <textarea type="text" className="description-todo" placeholder="Descrição" onChange={this.setDescription} maxLength="150"/>
-                    <input type="submit" className="save-todo" value="Salvar"/>
-                </form>
-            </nav>
+                    <form onSubmit={this.saveTodo}>
+                        <input type="text" className="title-todo" placeholder="Título" onChange={this.setTitle} maxLength="25"/>
+                        <textarea type="text" className="description-todo" placeholder="Descrição" onChange={this.setDescription} maxLength="150"/>
+                        <input type="submit" className="save-todo" value="Salvar"/>
+                    </form>
+                </nav>
+            </div>
         )
     }
 }
