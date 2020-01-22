@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './style.css';
-import ReactDOM from 'react-dom';
 
 export default class Todo extends Component {
 

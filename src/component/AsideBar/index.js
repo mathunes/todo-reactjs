@@ -37,6 +37,9 @@ export default class AsideBar extends Component {
             this.props.onSubmit(this.state);
             document.querySelector('.container .aside-bar form input').value = "";
             document.querySelector('.container .aside-bar form textarea').value = "";
+            this.setTitle();
+            this.setDescription();
+            this.hideAsideBar();
         }
         
     }
