@@ -9,3 +9,8 @@
 html, body {
     background-color: #F2C8C4;
 }
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
