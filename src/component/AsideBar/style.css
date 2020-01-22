@@ -73,7 +73,6 @@ nav.aside-bar header h2 {
 nav.aside-bar form {
     display: flex;
     flex-direction: column;
-    font-family: 'Atala', sans-serif;
 }
 
 nav.aside-bar form input, textarea {
