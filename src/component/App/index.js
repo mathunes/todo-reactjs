@@ -3,8 +3,21 @@ import AsideBar from '../AsideBar';
 
 export default class App extends Component {
 
-  saveTodo(text) {
-    console.log(text);
+  constructor() {
+    super();
+    this.saveTodo = this.saveTodo.bind(this);
+
+    this.state = {
+      titleTodo: '',
+      descriptionTodo: ''
+    }
+  }
+
+  saveTodo(dataTodo) {
+    this.setState({
+      titleTodo: dataTodo.titleTodo,
+      descriptionTodo: dataTodo.descriptionTodo
+    });
   }
 
   render() {
