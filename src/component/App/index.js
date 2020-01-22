@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import AsideBar from '../AsideBar';
 
-function App() {
-  return (
-    <div className="App">
-      <AsideBar />
-    </div>
-  );
-}
+export default class App extends Component {
 
-export default App;
+  saveTodo(text) {
+    console.log(text);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <AsideBar onSubmit={this.saveTodo}/>
+      </div>
+    );
+  }
+  
+}

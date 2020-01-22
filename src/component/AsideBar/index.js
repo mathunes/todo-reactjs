@@ -3,8 +3,8 @@ import './style.css';
 import IconClose from '../../assets/icons/close.png';
 
 export default class AsideBar extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             titleTodo: '',
             descriptionTodo: ''
@@ -12,6 +12,7 @@ export default class AsideBar extends Component {
 
         this.setTitle = this.setTitle.bind(this);
         this.setDescription = this.setDescription.bind(this);
+        this.saveTodo = this.saveTodo.bind(this);
     }
 
     hideAsideBar() {
@@ -30,6 +31,11 @@ export default class AsideBar extends Component {
         })
     }
 
+    saveTodo(event) {
+        event.preventDefault();
+        this.props.onSubmit(this.state);
+    }
+
     render() {
         return (
             <nav className="aside-bar">
@@ -37,7 +43,8 @@ export default class AsideBar extends Component {
                     <h1>Adicionar tarefa</h1>
                     <img src={IconClose} alt="Botão para fechar asidebar" onClick={this.hideAsideBar} />
                 </header>
-                <form>
+
+                <form onSubmit={this.saveTodo}>
                     <input type="text" className="title-todo" placeholder="Título" onChange={this.setTitle}/>
                     <textarea type="text" className="description-todo" placeholder="Descrição" onChange={this.setDescription}/>
                     <input type="submit" className="save-todo" value="Salvar"/>
