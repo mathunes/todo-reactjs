@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './style.css';
 
 export default class Todo extends Component {
+
+    ready(e) {
+        e.target.parentNode.parentNode.style.display = "none";
+    }
+
     render() {
         return (
             <div className="todo">
@@ -12,7 +17,7 @@ export default class Todo extends Component {
                     <p>{this.props.todoData.descriptionTodo}</p>
                 </div>
                 <div className="todo-ready">
-                    <button>Pronto</button>
+                    <button onClick={this.ready}>Pronto</button>
                 </div>
             </div>
         )
