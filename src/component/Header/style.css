@@ -5,11 +5,19 @@ header.header-main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 20px;
+    position: relative;
 }
 
 header.header-main h1 {
     margin: auto;
     text-transform: uppercase;
     font-family: 'Alata', sans-serif;
+}
+
+header.header-main .add-todo {
+    position: absolute;
+    left: 0;
+    margin-left: 20px
 }

@@ -5,7 +5,7 @@ export default class Header extends Component {
     render() {
         return (
             <header className="header-main">
-                <button>
+                <button className="add-todo">
                     <p>Adicionar tarefa</p>
                 </button>
                 <h1>Tarefas</h1>

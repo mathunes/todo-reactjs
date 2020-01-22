@@ -10,6 +10,7 @@ nav.aside-bar {
     left: 0;
     transition: all 1s;
     box-shadow: 5px 0px 10px 0px rgba(13,13,13,.5);
+    z-index: 3;
 }
 
 .hide-aside-bar {
