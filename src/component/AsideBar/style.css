@@ -13,6 +13,26 @@ nav.aside-bar * {
     color: #F2C8C4;
 }
 
+nav.aside-bar header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.aside-bar header img {
+    width: 15px;
+    height: 15px;
+}
+
+nav.aside-bar header img:hover {
+    cursor: pointer;
+}
+
+nav.aside-bar header h1 {
+    margin: auto;
+}
+
 nav.aside-bar form {
     display: flex;
     flex-direction: column;

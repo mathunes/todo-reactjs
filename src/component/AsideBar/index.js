@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './style.css';
-import IconBack from '../../assets/icons/back.png';
+import IconClose from '../../assets/icons/close.png';
 
 export default class AsideBar extends Component {
     render() {
         return (
             <nav className="aside-bar">
                 <header>
-                    <img src={IconBack} alt="Botão para fechar asidebar" />
                     <h1>Adicionar tarefa</h1>
+                    <img src={IconClose} alt="Botão para fechar asidebar" />
                 </header>
                 <form>
                     <input type="text" className="title-todo" placeholder="Título"/>
