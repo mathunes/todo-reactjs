@@ -5,4 +5,42 @@ nav.aside-bar {
     padding: 20px;
     background-color: #28344C;
     height: 100vh;
+    text-align: center;
+}
+
+nav.aside-bar * {
+    margin: 10px 0;
+    color: #F2C8C4;
+}
+
+nav.aside-bar form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Atala', sans-serif;
+}
+
+nav.aside-bar form input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #F2C8C4;
+}
+
+nav.aside-bar form textarea.description-todo {
+    text-align: start;
+    height: 150px;
+    resize: none;
+}
+
+nav.aside-bar form input.save-todo {
+    background-color: #735646;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F2C8C4;
+    transition: all .2s;
+}
+
+nav.aside-bar form input.save-todo:hover {
+    background-color: #644c3f;
+    cursor: pointer;
 }

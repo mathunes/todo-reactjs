@@ -7,9 +7,9 @@ export default class AsideBar extends Component {
             <nav className="aside-bar">
                 <h1>Adicionar tarefa</h1>
                 <form>
-                    <input type="text" className="titleTodo" placeholder="Título"/>
-                    <input type="text" className="descriptionTodo" placeholder="Descrição"/>
-                    <input type="submit" className="saveTodo" value="Salvar"/>
+                    <input type="text" className="title-todo" placeholder="Título"/>
+                    <textarea type="text" className="description-todo" placeholder="Descrição"/>
+                    <input type="submit" className="save-todo" value="Salvar"/>
                 </form>
             </nav>
         )
