@@ -40,7 +40,7 @@ export default class AsideBar extends Component {
         return (
             <nav className="aside-bar">
                 <header>
-                    <h1>Adicionar tarefa</h1>
+                    <h2>Adicionar tarefa</h2>
                     <img src={IconClose} alt="Botão para fechar asidebar" onClick={this.hideAsideBar} />
                 </header>
 
