@@ -8,13 +8,14 @@ nav.aside-bar {
     text-align: center;
     position: absolute;
     left: 0;
-    transition: all 1s;
+    transition: all .5s;
     box-shadow: 5px 0px 10px 0px rgba(13,13,13,.5);
     z-index: 3;
 }
 
 .hide-aside-bar {
-    left: -1000px !important;
+    /* left: -1000px !important; */
+    left: calc(-40vw) !important;
 }
 
 nav.aside-bar * {
