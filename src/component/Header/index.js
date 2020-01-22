@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './style.css';
 
 export default class Header extends Component {
     render() {
         return (
-            <header>
+            <header className="header-main">
                 <button>
                     <p>Adicionar tarefa</p>
                 </button>
