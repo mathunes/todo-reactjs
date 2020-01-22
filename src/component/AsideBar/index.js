@@ -35,6 +35,8 @@ export default class AsideBar extends Component {
         event.preventDefault();
         if (this.state.titleTodo !== "") {
             this.props.onSubmit(this.state);
+        } else {
+            //Exibir 'digite titulo'
         }
         
     }
