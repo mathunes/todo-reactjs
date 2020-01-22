@@ -3,9 +3,31 @@ import './style.css';
 import IconClose from '../../assets/icons/close.png';
 
 export default class AsideBar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            titleTodo: '',
+            descriptionTodo: ''
+        }
+
+        this.setTitle = this.setTitle.bind(this);
+        this.setDescription = this.setDescription.bind(this);
+    }
 
     hideAsideBar() {
         document.querySelector('nav.aside-bar').classList.toggle('hide-aside-bar');
+    }
+
+    setTitle() {
+        this.setState({
+            titleTodo: document.querySelector('nav.aside-bar form .title-todo').value
+        })
+    }
+
+    setDescription() {
+        this.setState({
+            descriptionTodo: document.querySelector('nav.aside-bar form .description-todo').value
+        })
     }
 
     render() {
@@ -16,8 +38,8 @@ export default class AsideBar extends Component {
                     <img src={IconClose} alt="Botão para fechar asidebar" onClick={this.hideAsideBar} />
                 </header>
                 <form>
-                    <input type="text" className="title-todo" placeholder="Título"/>
-                    <textarea type="text" className="description-todo" placeholder="Descrição"/>
+                    <input type="text" className="title-todo" placeholder="Título" onChange={this.setTitle}/>
+                    <textarea type="text" className="description-todo" placeholder="Descrição" onChange={this.setDescription}/>
                     <input type="submit" className="save-todo" value="Salvar"/>
                 </form>
             </nav>
