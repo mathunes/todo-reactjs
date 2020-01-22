@@ -86,7 +86,7 @@ nav.aside-bar form input, textarea {
 
 nav.aside-bar form textarea.description-todo {
     text-align: start;
-    height: 150px;
+    height: 100px;
     resize: none;
 }
 

@@ -45,8 +45,8 @@ export default class AsideBar extends Component {
                 </header>
 
                 <form onSubmit={this.saveTodo}>
-                    <input type="text" className="title-todo" placeholder="Título" onChange={this.setTitle}/>
-                    <textarea type="text" className="description-todo" placeholder="Descrição" onChange={this.setDescription}/>
+                    <input type="text" className="title-todo" placeholder="Título" onChange={this.setTitle} maxLength="25"/>
+                    <textarea type="text" className="description-todo" placeholder="Descrição" onChange={this.setDescription} maxLength="150"/>
                     <input type="submit" className="save-todo" value="Salvar"/>
                 </form>
             </nav>

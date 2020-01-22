@@ -6,10 +6,10 @@ export default class Todo extends Component {
         return (
             <div className="todo">
                 <div className="todo-title">
-                    <h3>{this.props.todoData.title}</h3>
+                    <h3>{this.props.todoData.titleTodo}</h3>
                 </div>
                 <div className="todo-description">
-                    <p>{this.props.todoData.description}</p>
+                    <p>{this.props.todoData.descriptionTodo}</p>
                 </div>
                 <div className="todo-ready">
                     <button>Pronto</button>

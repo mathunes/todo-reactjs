@@ -31,9 +31,10 @@ export default class Main extends Component {
     render() {
         return (
             <main>
-                {this.state.todo.map((item) => {
+                {this.state.todo.map((item, id) => {
+                    
                     return (
-                        <Todo todoData={item}/>
+                        <Todo key={id} todoData={item}/>
                     )
                 })}
             </main>
