@@ -1,5 +1,8 @@
-nav form {
+nav.aside-bar {
     width: 30%;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    background-color: #28344C;
+    height: 100vh;
 }
